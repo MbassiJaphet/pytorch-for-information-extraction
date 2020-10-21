@@ -41,7 +41,7 @@ module.exports = {
         },
         */
         {
-          to: 'demo/',
+          to: '/',
           label: 'Demo',
           position: 'right',
           className: 'demo-button'
