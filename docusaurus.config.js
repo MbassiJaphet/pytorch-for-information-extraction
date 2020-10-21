@@ -2,7 +2,7 @@ module.exports = {
   title: 'Pytorch For Information Extraction',
   tagline: 'Reliable open-source solution for Information Extraction',
   url: 'https://mbassijaphet.github.io/pytorch-for-information-extraction/',
-  baseUrl: '/pytorch-for-information-extraction/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'MbassiJaphet', // Usually your GitHub org/user name.
