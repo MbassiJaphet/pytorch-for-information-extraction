@@ -1,0 +1,6 @@
+{
+    "num_classes": 1,
+    "classes": [
+        "STUDENT_ID"
+    ]
+}
