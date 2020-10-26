@@ -26,6 +26,16 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.code-output {
+  display: block;
+  padding: 12px;
+  margin-left: 12px;
+  margin-top: -16px;
+  border-radius: 8px;
+  background-color: #F6F6F6;
+  transition-duration: 200ms;
+}
+
 .demo-button {
   color: var(--ifm-navbar-link-hover-color);
   margin-right: 12px;
@@ -53,4 +63,15 @@
   border: 3px solid red;
   font-weight: bold;
   height: 300px;
+}
+
+.output-block {
+  max-height: 50vh;
+  overflow: auto;
+  border-radius: 8;
+  font-size: 0.67em;
+}
+
+ul {
+  padding-left: 4.67em;
 }

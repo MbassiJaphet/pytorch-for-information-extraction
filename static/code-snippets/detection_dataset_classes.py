@@ -1,0 +1,1 @@
+print('Number of classes: {}\nClasses: {}'.format(num_detection_classes, detection_classes))

@@ -91,7 +91,7 @@ module.exports = {
           sidebarPath: require.resolve('./docs/sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/MbassiJaphet/pytorch-for-information-extraction/edit/master/website/',
+            'https://github.com/MbassiJaphet/pytorch-for-information-extraction/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
