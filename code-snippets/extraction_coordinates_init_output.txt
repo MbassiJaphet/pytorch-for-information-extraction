@@ -1,0 +1,13 @@
+{'image_width': 324,
+ 'image_height': 204,
+ 'firstname': {'width': 125, 'height': 25, 'left': 55, 'top': 40},
+ 'lastname': {'width': 125, 'height': 25, 'left': 55, 'top': 65},
+ 'gender': {'width': 45, 'height': 20, 'left': 55, 'top': 123},
+ 'height': {'width': 45, 'height': 20, 'left': 100, 'top': 123},
+ 'birth_date': {'width': 125, 'height': 20, 'left': 55, 'top': 90},
+ 'department': {'width': 125, 'height': 20, 'left': 55, 'top': 140},
+ 'expiry_date': {'width': 125, 'height': 20, 'left': 55, 'top': 105},
+ 'photo': {'width': 110, 'height': 110, 'left': 210, 'top': 25},
+ 'mini_photo': {'width': 35, 'height': 35, 'left': 12, 'top': 132.5},
+ 'signature': {'width': 125, 'height': 44, 'left': 55, 'top': 160},
+ 'id': {'width': 45, 'height': 20, 'left': 279, 'top': 170}}
