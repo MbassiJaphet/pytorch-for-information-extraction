@@ -1,0 +1,2 @@
+Number of classes: 2
+Classes: ['BACKGROUND', 'STUDENT_ID']
