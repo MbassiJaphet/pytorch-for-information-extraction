@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Pytorch For Information Extraction',
-  tagline: 'Reliable open-source solution for Information Extraction',
+  title: 'Pytorch for Information Extraction on Image Documents',
+  tagline: 'Learn Pytorch by building an information extraction system for student-id cards from scratch',
   url: 'https://mbassijaphet.github.io/pytorch-for-information-extraction/',
   baseUrl: '/pytorch-for-information-extraction/',
   onBrokenLinks: 'throw',
@@ -26,7 +26,7 @@ module.exports = {
   themeConfig: {
     navbar: {
       hideOnScroll: false,
-      title: 'Pytorch For Information Extraction',
+      title: 'Pytorch for Information Extraction on Image Documents',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -42,7 +42,7 @@ module.exports = {
         */
         {
           to: '/',
-          label: 'Demo',
+          label: 'Colab Version',
           position: 'right',
           className: 'demo-button'
         }
