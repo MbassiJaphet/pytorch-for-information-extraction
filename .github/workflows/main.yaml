@@ -19,6 +19,7 @@ jobs:
       id: build
     - name: Build the Website
       run: |
+        cd tutorial
         yarn
         npm run build
     - name: Get output time
