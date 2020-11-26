@@ -41,7 +41,7 @@ module.exports = {
         },
         */
         {
-          to: '/',
+          to: 'https://colab.research.google.com/github/MbassiJaphet/pytorch-for-information-extraction/blob/master/code/tutorial.ipynb',
           label: 'Colab Version',
           position: 'right',
           className: 'demo-button'
