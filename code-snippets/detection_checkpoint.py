@@ -11,7 +11,7 @@ Do not edit the lines below
 '''
 
 if load_detection_checkpoint :
-  detection_checkpoint = torch.load(detection_checkpoint_path) if os.path.exists(detection_checkpoint_path) else None
+  detection_checkpoint = torch.load(detection_checkpoint_path, map_location=device) if os.path.exists(detection_checkpoint_path) else None
   detection_model_state_dict = detection_checkpoint['model_state_dict'] if not detection_checkpoint == None else None
   detection_optimizer_state_dict = detection_checkpoint['optimizer_state_dict'] if not detection_checkpoint == None else None
 else :
@@ -19,7 +19,7 @@ else :
 
 if not save_detection_checkpoint : detection_checkpoint_path = None
 # initialize detection model using the state dictionary from checkpoint
-detection_model = get_instance_segmentation_model(num_detection_classes, state_dict = detection_model_state_dict).to(device)
+detection_model = get_instance_segmentation_model(num_detection_classes, state_dict = detection_model_state_dict)
 
 if detection_checkpoint == None : print('No checkpoint loaded ! Loaded pre-trained model instead...')
 else : 

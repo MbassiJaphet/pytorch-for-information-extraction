@@ -1,5 +1,5 @@
 class DetectionDataset(torch.utils.data.Dataset):
-    def __init__(self, data_path, mode=None, classes=list(), transforms=None):
+    def __init__(self, data_path, mode=None, transforms=None):
         self.mode = mode
         self.data_path = data_path
         self.transforms = transforms
@@ -62,9 +62,9 @@ class DetectionDataset(torch.utils.data.Dataset):
         target["boxes"] = boxes_tensor
         target["masks"] = masks_tensor
 
-        if self.transforms is not None: image, target = self.transforms(image, target)
+        if self.transforms is not None: image_tensor, target = self.transforms(image, target)
 
-        return image, target
+        return image_tensor, target
 
     def __len__(self):
         return len(self.image_urls)
