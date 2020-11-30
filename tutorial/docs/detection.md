@@ -182,7 +182,7 @@ Firstly, let's use our detection model to compute predictions for an input image
 
 </details>
 
-![img](../static/img/student-id-01.svg)
+<img src="../static/img/student-id-01.svg" width="450"></img>
 
 Secondly, let's take a look at the raw outputs predicted by our detection model for the image above.
 <CodeBlock file="detection_model_predictions_raw"></CodeBlock>
@@ -197,8 +197,18 @@ Lastly, let's convert the raw predicted outputs into a human-understandable form
 
 ![img](../static/img/detection-prediction.svg)
 
+<details><summary>More Outputs</summary>
+
+![img](../static/img/detection-prediction-1.svg)
+![img](../static/img/detection-prediction-2.svg)
+
+</details>
+
+
 ## **1.4. Student ID Alignment**
 At this point, what is left to be done in this module is to align student-id(s) detected by out detection model. The aligned student-id(s) shall then be fed as input to the orientation module.
 <CodeBlock lines={[2]} file="detection_module_image_alignment"></CodeBlock>
 
 ![img](../static/img/image-alignment.svg)
+Now, let's save our aligned student-id.
+<CodeBlock lines={[2]} file="detection_module_image_alignment_save"></CodeBlock>

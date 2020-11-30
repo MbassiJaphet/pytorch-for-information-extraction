@@ -190,6 +190,15 @@ With our test function defined, we shall now use it to evaluate the performance 
 Let's properly visualize the performance of our orientation model via inference on sample images from the test dataset one at a time.
 
 Keep in mind that the objective behind an orientation module is to detect the orientation of an aligned document image, and to rectify it where necessary. Therefore, after inferencing every single image, we have shall apply the proper transformation to the image to rectify its orientation if necessary.
-<CodeBlock lines={[10,12,15,19]} file="orientation_model_prediction_visualize"></CodeBlock>
+<CodeBlock lines={[8,9,10,14,16]} file="orientation_model_prediction_visualize"></CodeBlock>
 
 ![img](../static/img/orientation-prediction.svg)
+
+<details><summary>More Outputs</summary>
+
+![img](../static/img/orientation-prediction-1.svg)
+<p></p>
+
+![img](../static/img/orientation-prediction-2.svg)
+
+</details>
