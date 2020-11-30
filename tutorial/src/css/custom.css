@@ -66,8 +66,35 @@
 }
 
 .output-block {
+  margin-top: -12px;
   max-height: 50vh;
   overflow: auto;
   border-radius: 8;
   font-size: 0.67em;
+}
+
+details {
+  margin-top: -16px;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  border-style: solid;
+  border-color: #64b5f6;
+  border-radius: 8px;
+}
+
+summary {
+  font-family: monospace;
+  margin-left: -12px;
+  cursor: pointer;
+  background-color: rgb(100, 181, 246, 0.5);
+  outline: none;
+}
+
+summary ::before{
+  margin: 4px;
+  padding: 4px;
+}
+
+.code-block, .output-block {
+  display: block;
 }

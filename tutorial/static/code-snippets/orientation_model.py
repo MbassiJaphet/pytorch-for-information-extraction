@@ -4,7 +4,7 @@ import torch.nn.functional as F
 class OrientationModel(torch.nn.Module):
     def __init__(self, num_classes):
         super(OrientationModel, self).__init__()
-        # Define layers of a CNN
+        # Define convolutional layers
         self.layer_1_conv = nn.Conv2d(3, 32, (3, 3), stride=1, padding=1)  # W = 112
         self.layer_2_conv = nn.Conv2d(32, 64, (3, 3), stride=1, padding=1)  # W = 56
         self.layer_3_conv = nn.Conv2d(64, 128, (3, 3), stride=1, padding=1)  # W = 28

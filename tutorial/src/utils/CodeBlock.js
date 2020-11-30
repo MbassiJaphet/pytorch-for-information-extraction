@@ -36,11 +36,24 @@ class CodeBlock extends React.Component {
         this._currentFile = null;
     }
 
+    _highlightLine(lineNumber) {
+        let style = { display: 'block' };
+        if (this.props.lines && this.props.lines.includes(lineNumber)) {
+            style.backgroundColor = 'rgb(144, 202, 249, 0.15)';
+            // style.color = 'blue';
+        }
+        return { style };
+    }
+
     render() {
         return (
-            <SyntaxHighlighter language="python" style={atomOneDark} customStyle={customStyle} codeTagProps={{ style: { color: '#e0e0e0' } }}>
-                {this.state.codeString}
-            </SyntaxHighlighter>
+            <div   class="code-block">
+                <SyntaxHighlighter language="python" lineProps={this._highlightLine.bind(this)}
+                wrapLines={true} lineNumberStyle={{ color: "#80d6ff" }} style={atomOneDark}
+                showLineNumbers={true} customStyle={customStyle} codeTagProps={{ style: { color: '#e0e0e0' } }}>
+                    {this.state.codeString}
+                </SyntaxHighlighter>
+            </div>
         );
     }
 

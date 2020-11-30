@@ -6,6 +6,7 @@ detection_optimizer = torch.optim.SGD(detection_params, lr=0.005, momentum=0.9, 
 detection_lr_scheduler = torch.optim.lr_scheduler.StepLR(detection_optimizer, step_size=10, gamma=0.95)
 
 # load optimizer state dictionary from checkpoint if available
-if detection_optimizer_state_dict is not None:
+if detection_optimizer_state_dict is None:  print('No checkpoint loaded ! Optimizer not loaded from checkpoint...')
+else:
     detection_optimizer.load_state_dict(detection_optimizer_state_dict)
-    print('Loaded optimizer from checkpoint...')
+    print('Loaded optizer from checkpoint...')
