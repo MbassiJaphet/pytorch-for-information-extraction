@@ -182,7 +182,7 @@ Firstly, let's use our detection model to compute predictions for an input image
 
 </details>
 
-<img src="../static/img/student-id-01.svg" width="450"></img>
+<img src="../static/img/student-id-1.svg" width="450"></img>
 
 Secondly, let's take a look at the raw outputs predicted by our detection model for the image above.
 <CodeBlock file="detection_model_predictions_raw"></CodeBlock>
